@@ -1,5 +1,9 @@
 ## Exploratory Data Analysis 
+<<<<<<< HEAD
 ###Project 1
+=======
+##Project 1
+>>>>>>> d7143c2b3e4cfae36abefd1760aab89aeb2dec15
 
 This assignment uses data from the UC Irvine Machine Learning Repository, a popular repository for machine learning datasets. In particular, we will be using the “Individual household electric power consumption Data Set” which I have made available on the course web site:
 
@@ -33,7 +37,11 @@ hist(powerDT[, Global_active_power], main="Global Active Power",
 
 dev.off()
 ```
+<<<<<<< HEAD
 ![](https://github.com/vikas31298/datasciencecoursera/blob/master/4/Project 1/1. bar_plot.png)
+=======
+![](https://github.com/vikas31298/datasciencecoursera/blob/master/4/Project%201/1.%20bar_plot.png)
+>>>>>>> d7143c2b3e4cfae36abefd1760aab89aeb2dec15
 ```R
 library("data.table")
 
@@ -62,7 +70,11 @@ plot(x = powerDT[, dateTime]
 
 dev.off()
 ```
+<<<<<<< HEAD
 ![](https://github.com/vikas31298/datasciencecoursera/blob/master/4/Project 1/plot2.png)
+=======
+![](https://github.com/vikas31298/datasciencecoursera/blob/master/4/Project%201/plot2.png)
+>>>>>>> d7143c2b3e4cfae36abefd1760aab89aeb2dec15
 ```R
 library("data.table")
 
@@ -95,7 +107,11 @@ legend("topright"
 
 dev.off()
 ```
+<<<<<<< HEAD
 ![](https://github.com/vikas31298/datasciencecoursera/blob/master/4/Project 1/plot3.png)
+=======
+![](https://github.com/vikas31298/datasciencecoursera/blob/master/4/Project%201/plot3.png)
+>>>>>>> d7143c2b3e4cfae36abefd1760aab89aeb2dec15
 ```R
 library("data.table")
 
@@ -140,4 +156,8 @@ plot(powerDT[, dateTime], powerDT[,Global_reactive_power], type="l", xlab="datet
 
 dev.off()
 ```
+<<<<<<< HEAD
 ![](https://github.com/vikas31298/datasciencecoursera/blob/master/4/Project 1/plot4.png)
+=======
+![](https://github.com/vikas31298/datasciencecoursera/blob/master/4/Project%201/plot4.png)
+>>>>>>> d7143c2b3e4cfae36abefd1760aab89aeb2dec15
