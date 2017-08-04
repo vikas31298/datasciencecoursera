@@ -33,7 +33,7 @@ hist(powerDT[, Global_active_power], main="Global Active Power",
 
 dev.off()
 ```
-![](https://github.com/vikas31298/datasciencecoursera/blob/master/4/Project 1/1. bar_plot.png)
+![](https://github.com/vikas31298/datasciencecoursera/blob/master/4/Project%201/1.%20bar_plot.png)
 ```R
 library("data.table")
 
@@ -62,7 +62,7 @@ plot(x = powerDT[, dateTime]
 
 dev.off()
 ```
-![](https://github.com/vikas31298/datasciencecoursera/blob/master/4/Project 1/plot2.png)
+![](https://github.com/vikas31298/datasciencecoursera/blob/master/4/Project%201/plot2.png)
 ```R
 library("data.table")
 
@@ -95,7 +95,7 @@ legend("topright"
 
 dev.off()
 ```
-![](https://github.com/vikas31298/datasciencecoursera/blob/master/4/Project 1/plot3.png)
+![](https://github.com/vikas31298/datasciencecoursera/blob/master/4/Project%201/plot3.png)
 ```R
 library("data.table")
 
@@ -140,4 +140,4 @@ plot(powerDT[, dateTime], powerDT[,Global_reactive_power], type="l", xlab="datet
 
 dev.off()
 ```
-![](https://github.com/vikas31298/datasciencecoursera/blob/master/4/Project 1/plot4.png)
+![](https://github.com/vikas31298/datasciencecoursera/blob/master/4/Project%201/plot4.png)
