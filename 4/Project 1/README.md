@@ -1,4 +1,5 @@
-## Exploratory Data Analysis Project 1
+## Exploratory Data Analysis 
+###Project 1
 
 This assignment uses data from the UC Irvine Machine Learning Repository, a popular repository for machine learning datasets. In particular, we will be using the “Individual household electric power consumption Data Set” which I have made available on the course web site:
 
@@ -8,7 +9,7 @@ Dataset:
 ```R
 library("data.table")
 
-setwd("~/Desktop/datasciencecoursera/4_Exploratory_Data_Analysis/project/data")
+setwd("~/Desktop/datasciencecoursera/4/project/data")
 
 #Reads in data from file then subsets data for specified dates
 powerDT <- data.table::fread(input = "household_power_consumption.txt"
@@ -24,7 +25,7 @@ powerDT[, Date := lapply(.SD, as.Date, "%d/%m/%Y"), .SDcols = c("Date")]
 # Filter Dates for 2007-02-01 and 2007-02-02
 powerDT <- powerDT[(Date >= "2007-02-01") & (Date <= "2007-02-02")]
 
-png("plot1.png", width=480, height=480)
+png("1. bar_plot.png", width=480, height=480)
 
 ## Plot 1
 hist(powerDT[, Global_active_power], main="Global Active Power", 
@@ -32,11 +33,11 @@ hist(powerDT[, Global_active_power], main="Global Active Power",
 
 dev.off()
 ```
-![](https://github.com/mGalarnyk/datasciencecoursera/blob/master/4_Exploratory_Data_Analysis/project1/plot1.png)
+![](https://github.com/vikas31298/datasciencecoursera/blob/master/4/Project 1/1. bar_plot.png)
 ```R
 library("data.table")
 
-setwd("~/Desktop/datasciencecoursera/4_Exploratory_Data_Analysis/project/data")
+setwd("~/Desktop/datasciencecoursera/4/project/data")
 
 #Reads in data from file then subsets data for specified dates
 powerDT <- data.table::fread(input = "household_power_consumption.txt"
@@ -61,11 +62,11 @@ plot(x = powerDT[, dateTime]
 
 dev.off()
 ```
-![](https://github.com/mGalarnyk/datasciencecoursera/blob/master/4_Exploratory_Data_Analysis/project1/plot2.png)
+![](https://github.com/vikas31298/datasciencecoursera/blob/master/4/Project 1/plot2.png)
 ```R
 library("data.table")
 
-setwd("~/Desktop/datasciencecoursera/4_Exploratory_Data_Analysis/project/data")
+setwd("~/Desktop/datasciencecoursera/4/project/data")
 
 #Reads in data from file then subsets data for specified dates
 powerDT <- data.table::fread(input = "household_power_consumption.txt"
@@ -94,11 +95,11 @@ legend("topright"
 
 dev.off()
 ```
-![](https://github.com/mGalarnyk/datasciencecoursera/blob/master/4_Exploratory_Data_Analysis/project1/plot3.png)
+![](https://github.com/vikas31298/datasciencecoursera/blob/master/4/Project 1/plot3.png)
 ```R
 library("data.table")
 
-setwd("~/Desktop/datasciencecoursera/4_Exploratory_Data_Analysis/project/data")
+setwd("~/Desktop/datasciencecoursera/4/project/data")
 
 #Reads in data from file then subsets data for specified dates
 powerDT <- data.table::fread(input = "household_power_consumption.txt"
@@ -139,4 +140,4 @@ plot(powerDT[, dateTime], powerDT[,Global_reactive_power], type="l", xlab="datet
 
 dev.off()
 ```
-![](https://github.com/mGalarnyk/datasciencecoursera/blob/master/4_Exploratory_Data_Analysis/project1/plot4.png)
+![](https://github.com/vikas31298/datasciencecoursera/blob/master/4/Project 1/plot4.png)
