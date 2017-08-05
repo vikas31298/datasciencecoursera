@@ -1,0 +1,83 @@
+9. Shiny Application and Reproducible Pitch : Peer Graded Assignment
+========================================================
+author: Vikas Deshmane
+date: 8/6/2017
+autosize: true
+
+Course Project
+========================================================
+ - This is the final presentation for the Course Project of the "Developing data products" course
+ - This course is part of the "Data Science specialization"
+ - The project consists in two activities:</br>
+     - Create a Shiny application</br>
+     - Create a presentation in Slidify or Rstudio Presenter to pitch for the application.</br></br>
+     
+ - The shiny app developed for this assignment is avalilable at this [My ShinyApps] (https://vikasdeshmane.shinyapps.io/inputApp/)
+ - The source codes of ui.R and server.R and also Rpresentation are available on [My GitHub Repository] (https://github.com/vikas31298/datasciencecoursera/tree/master/Data_Product/Assignment 3/inputApp)
+
+Project Summary of Input App
+========================================================
+This presentation aims to demonstrate the implementation of reading the input from the client and displaying the input recieved on the label. Once the input is extracted then the required operation can be easily performed on the retrieved input
+
+<b>Scope</b>
+
+- The project can be further expanded to the validation 
+- The data taken as an input can be processed and displayed as output
+- More visuals can be added with some more filters in those
+
+
+Input Fields
+========================================================
+Currently, there are 3 Input fields on the hosted App.
+
+Numeric dropdown : The dropdown field which accpets an integer value
+
+Check box field : A group of checkboxes which allows users to select multiple values and on selecting or deselecting a checkbox the output label is upadted accordingly
+
+The Date field - A Text box which allows users to select the date from a calender the chosen date in displayed on the label
+
+Code
+========================================================
+
+<b>Server.R  Code</b>
+
+```
+library(shiny)
+shinyServer(
+  function(input, output) {
+    output$oid1 <- renderPrint({input$id1})
+    output$oid2 <- renderPrint({input$id2})
+    output$odate <- renderPrint({input$date})
+  }
+)
+```
+<b>BMI Output Code</b>
+
+
+```
+library(shiny)
+shinyUI(pageWithSidebar(
+  headerPanel("Illustrating inputs"),
+  sidebarPanel(
+    numericInput('id1', 'Numeric input, labeled id1', 0, min = 0, max = 10, step = 1),
+    checkboxGroupInput("id2", "Checkbox",
+                   c("Value 1" = "1",
+                     "Value 2" = "2",
+                     "Value 3" = "3")),
+    dateInput("date", "Date:")  
+  ),
+  mainPanel(
+        h3('Illustrating outputs'),
+        h4('You entered'),
+        verbatimTextOutput("oid1"),
+        h4('You entered'),
+        verbatimTextOutput("oid2"),
+        h4('You entered'),
+        verbatimTextOutput("odate")
+  )
+))
+
+```
+
+
+
