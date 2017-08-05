@@ -13,7 +13,7 @@ Course Project
      - Create a presentation in Slidify or Rstudio Presenter to pitch for the application.</br></br>
      
  - The shiny app developed for this assignment is avalilable at this [My ShinyApps] (https://vikasdeshmane.shinyapps.io/inputApp/)
- - The source codes of ui.R and server.R and also Rpresentation are available on [My GitHub Repository] (https://github.com/vikas31298/datasciencecoursera/tree/master/Data_Product/Assignment 3/inputApp)
+ - The source codes of ui.R and server.R and also Rpresentation are available on [My GitHub Repository] (https://github.com/vikas31298/datasciencecoursera/tree/master/9.%20Developing%20Data%20Products/Assignment_3)
 
 Project Summary of Input App
 ========================================================
